@@ -63,3 +63,27 @@ body {
   font-size: 16px;
   color: #252F40;
 }
+
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1128px;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: 360px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
