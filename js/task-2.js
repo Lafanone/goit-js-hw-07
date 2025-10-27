@@ -24,3 +24,18 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+const galleryList = document.querySelector('.gallery')
+const galeryMarkup = images
+  .map((image) => 
+    `<li class="gallery-item">
+      <img src="${image.url}" 
+        alt="${image.alt}" 
+        width="360" 
+        height="300"
+        class="gallery-image">
+</li>`
+)
+  .join('')
+galleryList.insertAdjacentHTML('beforeend', galeryMarkup)
+galleryList.classList.add('flex-gallery')
