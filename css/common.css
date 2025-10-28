@@ -164,3 +164,42 @@ h1 {
   align-self: flex-start;
 }
 
+{
+    box-sizing: border-box;
+  }
+
+  .widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 100px 88px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+  }
+
+  .widget p {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    /* 24px */
+    color: #2E2F42;
+  }
+
+  .widget button.change-color {
+    padding: 8px 16px;
+    background-color: #4E75FF;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    /* 24px */
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 40px;
+  }
